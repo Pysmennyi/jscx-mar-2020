@@ -185,7 +185,7 @@ let fatherPatronymic = prompt(`enter your father patronymic`);
   alert(fatherPatronymic);
   let father = fatherSurname + ` ` + fatherSurname + ` ` + fatherPatronymic;
   console.log(father);*/
-/** TASK 7 **/
+/*// TASK 7
 // - при помощи prompt() получить 3 числа. Привести их к числовому типу при помощи +. вывести их в консоль.
 let numberForTask7_1 = +prompt(`enter num1 for task 7`);
 let numberForTask7_2 = +prompt(`enter num2 for task 7`);
@@ -193,7 +193,7 @@ let numberForTask7_3 = +prompt(`enter num3 for task 7`);
 console.log(numberForTask7_1, numberForTask7_2, numberForTask7_3);
 console.log(`${numberForTask7_1} ${numberForTask7_2} ${numberForTask7_3}`);
 
-/** TASK 8 **/
+/!** TASK 8 **!/
 // - при помощи prompt() получить 4 числа. Привести их к числовому типу при помощи parseInt.
 // Сложить их между собой записав результат в переменную result и вывести в консоль браузера
 let numberForTask8_1 = parseInt(+prompt(`enter num1 for task 8`));
@@ -202,7 +202,7 @@ let numberForTask8_3 = parseInt(+prompt(`enter num3 for task 8`));
 let numberForTask8_4 = parseInt(+prompt(`enter num4 for task 8`));
 let resTask8 = numberForTask8_1 + numberForTask8_2 + numberForTask8_3 + numberForTask8_4;
 console.log(resTask8);
-/** TASK 9 **/
+/!** TASK 9 **!/
 // - при помощи prompt()  получить 3 числа с плавающей точекой. при помощи parseFloat привести их к соответсвующему типу.
 // Сложить их между собой записав результат в переменную result и вывести в консоль браузера
 let numberForTask9_1 = parseFloat(+prompt(`enter num1 for task 9`));
@@ -211,34 +211,46 @@ let numberForTask9_3 = parseFloat(+prompt(`enter num3 for task 9`));
 let resTask9 = numberForTask9_1 + numberForTask9_2 + numberForTask9_3;
 console.log(resTask9);
 
-/** TASK 10 **/
+/!** TASK 10 **!/
 // - при помощи prompt()  получить 3 числа с плавающей точекой. Округлить их при помощи Math.round
 // Сложить их между собой записав результат в переменную  и вывести в консоль браузера
-/** TASK 11 **/
+let numberForTask10_1 = Math.round(parseFloat(+prompt(`enter num1 for task 10`)));
+let numberForTask10_2 = Math.round(parseFloat(+prompt(`enter num2 for task 10`)));
+let numberForTask10_3 = Math.round(parseFloat(+prompt(`enter num3 for task 10`)));
+let resTask10 = numberForTask10_1 + numberForTask10_2 + numberForTask10_3;
+alert(resTask10);
+/!** TASK 11 **!/
 // - при помощи prompt()  получить 2 целых числа. Привести их к целочисленному типу.
 // Первое число - это число которое будут возводить в степень. Второе число - это число которое является степенью.
 // При помощи Math.pow возвести первое число в степень второго числа.
+let numberForTask11_1 = parseInt(+prompt(`enter num1 for task 11`));
+let numberForTask11_2 = parseInt(+prompt(`enter num2 for task 11`));
+let numberInPow = Math.pow(numberForTask11_1, numberForTask11_2);
+console.log(numberInPow);*/
 /** TASK 12 **/
 // - При помощи оператора опредеоения типа typeof определить типы следующих переменных и вывести их в консоль
 // let a = 100; let b = '100'; let c = true; let d = undefined;
+ let a = 100; let b = '100'; let c = true; let d = undefined;
+console.log(`${typeof a} ${typeof b} ${typeof c} ${typeof d}`);
 /** TASK 13 **/
 // - Поставьте соответствующий оператор в выражениях что бы получился соответсвующий результат.
 //  В одинаковых выражениях в задании не использовать два одинаковых оператора.
 // Каждое выражение вложить в свою переменную
-//     5 ? 6 -> true
-//     5 ? 6 -> false
-//     5 ? 6 -> false
-//     5 ? 6 -> false
-//     10 ? 10 -> true
-//     10 ? 10 -> true
-//     10 ? 10 -> false
-//     10 ? 10 -> false
-//     10 ? 10 -> false
-//     123 ? '123' -> false
-//     123 ? '123' -> true
+ console.log(5 < 6);//-> true
+ console.log(5 > 6);//-> false
+ console.log(5 == 6);//-> false
+ console.log(5 === 6);//-> false
+ console.log(10 === 10);//-> true
+ console.log(10 == 10);//-> true
+ console.log(10 > 10);//-> false
+ console.log(10 != 10);//-> false
+ console.log(10 < 10);//-> false
+ console.log(123 === '123');//-> false
+ console.log(123 == '123');//-> true
 /** TASK 15 **/
 // Дополнительно:
 // - Посмотрев на следюующие выражения, скажите, каков будет вывод в консоль
+
 // console.log(132 > 100 && 45 < 12 );
 // console.log(34 > 33 && 23 < 90 );
 // console.log(99 > 100 && 45 > 12 );
