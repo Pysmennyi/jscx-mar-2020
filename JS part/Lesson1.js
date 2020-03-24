@@ -359,22 +359,29 @@ console.log(`cylinder area is ` + v);
 //   Вывести в документ содержимое переменной concatenation спомощью document.write
 //
 // 10. Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
-//     let str = "20";
-//      let a = 5;
-//      document.write(str + a + "<br/>");
-//      document.write(str - a + "<br/>");
-//      document.write(str * "2" + "<br/>");
-//      document.write(str / 2 + "<br/>");
+    let strTask10 = "20";
+     let aTask10 = 5;
+     document.write(strTask10 + aTask10 + "<br/>");    //205 - Concat(string + number)
+     document.write(strTask10 - aTask10 + "<br/>");    //15  - operation possible
+     document.write(strTask10 * "2" + "<br/>");        //40  - operation possible
+     document.write(strTask10 / 2 + "<br/>");          //10  - operation possible
 // 11. Какие значения выведет в окно консоли следующий фрагмент кода если его поместить в console.log?
-//     parseInt("3.14")
-//     parseInt("-7.875")
-//     parseInt("435")
-//     parseInt("Вася")
+    console.log(parseInt("3.14")); //3
+    console.log(parseInt("-7.875"));  //-7
+    console.log(parseInt("435")); //435
+    console.log(parseInt("Вася")); //Nan
 //
-// 12.  С помощью окна ввода, вызываемого методом prompt, пользователь может ввести данные, которые будут использоваться далее, повторите код ниже
+// 12.  С помощью окна ввода, вызываемого методом prompt, пользователь может ввести данные, которые будут использоваться далее,
+// повторите код ниже
 //     let str = prompt("Enter something", "ho-ho")
 //     console.log(str);
 //
 // 13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел, а вывод результата при помощи метода alert
-// 14. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию и возраст, а вам не обходимо вывести строку такого вида
+let number1 = +prompt(`enter num1`);
+let number2 = +prompt(`enter num2`);
+let sum = number1+number2;
+alert(sum);
+// 14. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию и возраст,
+// а вам не обходимо вывести строку такого вида
 //       Доброго вечера Иван Иванов, мои поздравления что вам 32 , а вывод результата при помощи метода alert
+alert(`Доброго вечера ${prompt(`enter your name`)}, мои поздравления что вам ${prompt(`enter your age`)}`);
