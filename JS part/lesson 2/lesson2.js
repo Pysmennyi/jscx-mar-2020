@@ -96,58 +96,176 @@ let driver = {
     car: `bicycle`
 };
 // - іграшку
+let doll = {
+    gender: [`male`, `female`],
+    for_kids: `no`,
+    expensive: `yes`,
+    height: 186,
+    skinColor:{
+        color1: `white`,
+        color2: `black`,
+        color3: `yellow`,
+        color4: `mix`
+    }
+};
 // - стіл
+let table = {
+    height: [100, 200, 300],
+    color:{
+        color1: `white`,
+        color2: `black`,
+        color3: `yellow`,
+        color4: `mix`
+    },
+    material:[`wood`, `metal`, `poliester`],
+    locker:[`yes`, `no`],
+    waterproof:{
+        yes:`yes`,
+        no: `no`
+    }
+};
 // - сумка
+let bag = {
+    height:[30, 40, 50, `over 50`],
+    color:{
+        color1: `white`,
+        color2: `black`,
+        color3: `yellow`,
+        color4: `mix`
+    },
+    type:[`backpag`, `purse`, `other`],
+    purpose:{
+        purpose1: `for work`,
+        purpose2: `for city`,
+        purpose3: `for hiking`,
+    },
+    grnder:[`male`, `female`, `other`]
+
+};
 // Дан массив:
-//   let users = [
-//     {name: 'vasya', age: 31, status: false},
-//     {name: 'petya', age: 30, status: true},
-//     {name: 'kolya', age: 29, status: true},
-//     {name: 'olya', age: 28, status: false},
-//     {name: 'max', age: 30, status: true},
-//     {name: 'anya', age: 31, status: false},
-//     {name: 'oleg', age: 28, status: false},
-//     {name: 'andrey', age: 29, status: true},
-//     {name: 'masha', age: 30, status: true},
-//     {name: 'olya', age: 31, status: false},
-//     {name: 'max', age: 31, status: true}
-//   ];
+  let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+  ];
 // - звернутися в відповідну ячейку масиву і відповідний параметр об'єкта і вивести в консольх наступне
 // - статус Андрія
+console.log(users[7].status);
 
 // - статус Максима users[10].status
+console.log(users[10].status);
 // - ім'я передостаннього об'єкту
+console.log(users[users.length-2].name);
 // - ім'я третього об'єкта
+console.log(users[2].name);
 // - вік Олега
+console.log(users[6].age);
 // - вік Олі
+console.log(users[users.length-2].age);
 // - вік + ім'я 5го об'єкта
+console.log(`${users[4].name}, ${users[4].age}`);
 // - вік + сатус Анни users[9].age + ' ' + user[9].status
+console.log(`${users[5].name}, ${users[5].age}, ${users[5].status}`);
 // Приклад: вивести ім'я 1го об'єкта. Відповідь: console.log (users [0] .name). Будьте уважні! 4й об'єкт має індес 3!
 //
 // -Візьміть файл task2_template.html, підключіть до нього скрипт, і працюйте в ньому.
 //
 // -- Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
 // - отримує текст з параграфа з id "content"
+let content = document.getElementById('content');
+console.log(content.innerText);
 // - замініть текст параграфа з id 'content' на будь-який інший
+console.log(document.getElementById(`rules`).innerText);
 // - замініть текст параграфа з id 'rules' на будь-який інший
+let rules = document.getElementById(`rules`);
+console.log(rules.innerText = `hell`);
 // - змініть кожному елементу колір фону на червоний
+content.style.backgroundColor = `red`;
+rules.style.backgroundColor = `red`;
 // - змініть кожному елементу колір тексту на синій
-// - отримати весь список класів елемента з id=rules і вивести їх в console.log
+content.style.color = `blue`;
+rules.style.color = `blue`;
+// - отримати весь список класів елемента з  id=rules і вивести їх в console.log
+console.log(rules.classList);
 // - отримати всі елементи з класом fc_rules
+let fc_rules = document.getElementsByClassName(`fc_rules`);
+console.log(fc_rules);
 // - поміняти колір тексту у всіх елементів fc_rules на червоний
+for (const fc_rul of fc_rules) {
+    fc_rul.style.color = `red`;
+}
 // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+let arr = [2,17,13,6,22,31,45,66,100,-18];
 // //   1. перебрати його циклом while}
+let counter = 0;
+// while (counter < arr.length){
+//     console.log(arr[counter]);
+//     counter++;
+// }
 // //   2. перебрати його циклом for
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
 // //   3. перебрати циклом while та вивести  числа тільки з непарним індексом
+// while(counter<arr.length){
+//     if (counter%2 === 0){
+//         console.log(arr[counter]);
+//     }
+//     counter++;
+// }
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+// while(counter<arr.length){
+//     if (counter%2 !== 0){
+//         console.log(arr[counter]);
+//     }
+//     counter++;
+// }
 // 5. перебрати циклом while та вивести  числа тільки парні  значення
+// while (counter<arr.length){
+//     if (arr[counter]%2===0){
+//         console.log(arr[counter]);
+//     }
+//     counter++;
+// }
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i]%2===0){
+//         console.log(arr[i]);
+//     }
+//
+// }
 // 7. замінити кожне число кратне 3 на слово "okten"
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i]%3===0){
+//         arr[i]=`okten`;
+//     }
+// }
+// console.log(arr);
+
 // 8. вивести масив в зворотньому порядку.
+// for (let i = arr.length-1; i >=0;) {
+//     console.log(arr[i]);
+//     i--;
+// }
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 // 10
 // створити пустий масив та :
+let emptyArray = [];
 //   - заповнити його 50 парними числами за допомоги циклу.
+let even =2;
+for (let i = 2; i < 50; i++) {
+        emptyArray[i] = even;
+        even +=2;
+}
+console.log(emptyArray);
 // - заповнити його 50 непарними числами за допомоги циклу.
 // 1
 // створити пустий масив та :
