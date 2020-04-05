@@ -132,6 +132,17 @@ let arr3 =[];
 
 console.log(addIndex(arr1, arr2));
 // - *** приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+function replace(array, i) {
+    if (i < array.length) {
+let elem = array[i];
+array[i] = array[i+1];
+array[i+1] = elem;
+    }
+    return array;
+}
+replace([1, 0, 6, 0, 3], 2);
+
+console.log(replace([1, 0, 6, 0, 3], 2));
 // - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 // Двожина масиву від 2 до 100
 // Приклад
@@ -139,6 +150,24 @@ console.log(addIndex(arr1, arr2));
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
 //
+function replaceToEnd(array) {
+    let zeros =[];
+    let others = [];
+if (array.length>=2 && array.length<=100){
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === 0){
+            zeros.push(array[i]);
+        }else others.push(array[i]);
+
+    }return result = others.concat(zeros);
+}else {
+    return `array to small`;
+}
+}
+
+console.log(`функцію яка буде переносити елементи з значенням 0`);
+console.log(replaceToEnd([0,0,1,0]));
+
 // Створити функцію яка :
 // - Додає в боді блок з текстом "Hello owu"
 // - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи

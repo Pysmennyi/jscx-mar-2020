@@ -206,55 +206,55 @@ for (const fc_rul of fc_rules) {
 let arr = [2,17,13,6,22,31,45,66,100,-18];
 // //   1. перебрати його циклом while}
 let counter = 0;
-// while (counter < arr.length){
-//     console.log(arr[counter]);
-//     counter++;
-// }
+while (counter < arr.length){
+    console.log(arr[counter]);
+    counter++;
+}
 // //   2. перебрати його циклом for
-// for (let i = 0; i < arr.length; i++) {
-//     console.log(arr[i]);
-// }
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
 // //   3. перебрати циклом while та вивести  числа тільки з непарним індексом
-// while(counter<arr.length){
-//     if (counter%2 === 0){
-//         console.log(arr[counter]);
-//     }
-//     counter++;
-// }
+while(counter<arr.length){
+    if (counter%2 === 0){
+        console.log(arr[counter]);
+    }
+    counter++;
+}
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
-// while(counter<arr.length){
-//     if (counter%2 !== 0){
-//         console.log(arr[counter]);
-//     }
-//     counter++;
-// }
+while(counter<arr.length){
+    if (counter%2 !== 0){
+        console.log(arr[counter]);
+    }
+    counter++;
+}
 // 5. перебрати циклом while та вивести  числа тільки парні  значення
-// while (counter<arr.length){
-//     if (arr[counter]%2===0){
-//         console.log(arr[counter]);
-//     }
-//     counter++;
-// }
+while (counter<arr.length){
+    if (arr[counter]%2===0){
+        console.log(arr[counter]);
+    }
+    counter++;
+}
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
-// for (let i = 0; i < arr.length; i++) {
-//     if (arr[i]%2===0){
-//         console.log(arr[i]);
-//     }
-//
-// }
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i]%2===0){
+        console.log(arr[i]);
+    }
+
+}
 // 7. замінити кожне число кратне 3 на слово "okten"
-// for (let i = 0; i < arr.length; i++) {
-//     if (arr[i]%3===0){
-//         arr[i]=`okten`;
-//     }
-// }
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i]%3===0){
+        arr[i]=`okten`;
+    }
+}
 // console.log(arr);
 
 // 8. вивести масив в зворотньому порядку.
-// for (let i = arr.length-1; i >=0;) {
-//     console.log(arr[i]);
-//     i--;
-// }
+for (let i = arr.length-1; i >=0;) {
+    console.log(arr[i]);
+    i--;
+}
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 // 10
 // створити пустий масив та :
