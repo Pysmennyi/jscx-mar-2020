@@ -67,7 +67,8 @@ function minOfArray(array) {
     let arrMin = arguments[0];
     for (const item of arguments) {
         if (item < arrMin) arrMin = item;
-    }return arrMin;
+    }
+    return arrMin;
 }
 console.log(minOfArray(1, 3, 5, 3, 6, 44, 23, 54, 234));
 // - створити функцію яка приймає масив чисел та складає значення елементів масиву та повертає його.
@@ -170,7 +171,22 @@ console.log(replaceToEnd([0,0,1,0]));
 
 // Створити функцію яка :
 // - Додає в боді блок з текстом "Hello owu"
+function addDiv(message) {
+    const div = document.createElement(`div`);
+    div.innerHTML = message || `Hello owu`;
+    document.body.appendChild(div);
+}
+
+addDiv();
 // - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
+
+function addText(message, type) {
+const tag = document.createElement(type);
+tag.innerHTML = message || `Hey you!`;
+document.body.appendChild(tag);
+}
+
+addText(`null`, `h1`);
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
