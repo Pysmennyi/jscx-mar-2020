@@ -315,11 +315,17 @@ console.log(usersWithAddress);
 //     return a.id - b.id ? -1 : 1;
 // });
 // console.log(sortClass2);
+
+//питання>>>>>>>>>>>>>>>>>
+
+
 console.log(`-- отсортировать его по возрасту пользователей`);
 let sortClass3 = usersWithAddress.sort((a, b) => {
     return a.age - b.age ? 1 : -1;
 });
 console.log(sortClass3);
+
+
 // -- отсортировать его по возрасту пользователей в обратном порядке
 // -- отсортировать его по имени пользователей
 // -- отсортировать его по имени пользователей в обратном порядке
